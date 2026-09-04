@@ -37,7 +37,7 @@ The full production repository is private while the app is actively developed. T
 
 ## Current Build — Phase 1
 
-<img src="assets/phase-1-foundation.svg" alt="LevelRep Phase 1 mobile UI showcase" width="100%" />
+<img src="assets/phase-1-foundation.svg" alt="LevelRep Phase 1 mobile UI showcase" width="80%" />
 
 > The artwork above is a public showcase composition based on the current LevelRep design language and implemented Phase 1 flows. It intentionally contains no private backend data or production source code.
 
