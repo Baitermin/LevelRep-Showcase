@@ -1,15 +1,21 @@
 <div align="center">
 
-# 🏋️ LevelRep
+<img src="assets/levelrep-hero.svg" alt="LevelRep — Every rep levels you up" width="100%" />
+
+<br />
+
+# LevelRep
 
 ### Every rep levels you up.
 
-A cross-platform fitness app focused on **personalized training, progression and motivation**.
+A cross-platform fitness app being built around **adaptive training, measurable progression, motivation and social competition**.
 
 ![Repository](https://img.shields.io/badge/Source-Private-6e7681?style=flat-square&logo=github)
-![Status](https://img.shields.io/badge/Status-Active_Development-f59e0b?style=flat-square)
+![Status](https://img.shields.io/badge/Phase_1-Complete-2f81f7?style=flat-square)
+![Android](https://img.shields.io/badge/Android-Development_Build-3DDC84?style=flat-square&logo=android&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-Planned-111111?style=flat-square&logo=apple&logoColor=white)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo_SDK_57-000020?style=flat-square&logo=expo&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 
@@ -17,144 +23,249 @@ A cross-platform fitness app focused on **personalized training, progression and
 
 ---
 
-## Overview
+## What is LevelRep?
 
-LevelRep is an iOS and Android fitness app built around a simple long-term loop:
+LevelRep is a mobile fitness product for **Android and iOS** designed around one long-term training loop:
 
 > **Plan → Train → Measure → Adapt → Progress → Repeat**
 
-The goal is to combine traditional workout tracking with adaptive training, progressive overload and gamification without turning the app into a generic fitness dashboard.
+The goal is not just to generate workouts. LevelRep is being designed so that future training decisions can build on structured history: previous exercises, sets, reps, load, progression, available equipment, recovery context and consistency.
 
-The production source repository is private while the application is under active development. This repository is the public showcase for the project, its architecture, current progress and roadmap.
+The full production repository is private while the app is actively developed. This repository is the public showcase for the product direction, architecture, visual language and roadmap.
 
 ---
 
-## Current Status
+## Current Build — Phase 1
 
-**Phase 1 — Foundation is complete.** The current app has been validated end-to-end against a live Supabase backend.
+<img src="assets/phase-1-foundation.svg" alt="LevelRep Phase 1 mobile UI showcase" width="100%" />
 
-### Implemented today
+> The artwork above is a public showcase composition based on the current LevelRep design language and implemented Phase 1 flows. It intentionally contains no private backend data or production source code.
 
-- Email/password authentication
+**Phase 1 — Foundation is complete.** The current application includes a working mobile foundation backed by a live Supabase project.
+
+### Authentication & identity
+
+- Email/password sign-up and sign-in
 - Google OAuth through Supabase Auth
 - Persistent authenticated sessions
-- First-login username setup
-- One-question-per-screen onboarding flow
-- Training profile and preference editing
-- Equipment selection
-- Private avatar uploads
-- Dark reusable design system
-- Secure Postgres schema with Row Level Security
-- Client + database validation
-- CI checks for linting, TypeScript and tests
-- Android development builds through Expo/EAS
+- Deleted/stale-session verification on startup
+- First-time OAuth username setup
+- Case-insensitive unique usernames
+- Stable native `levelrep://auth/callback` OAuth flow in the Android development build
 
-The main Home, Train, Calendar and Social areas are currently foundation placeholders while the workout engine and later product phases are built.
+### Onboarding & profile
+
+- Premium dark, one-question-per-screen onboarding
+- Resumable user-scoped onboarding drafts
+- Goal, experience and training-frequency setup
+- Height and weight measurement pickers
+- Workout duration and training-environment preferences
+- Live equipment selection with Select all / Deselect all
+- Muscle-focus preferences with a maximum of four focused areas
+- Exercise likes/dislikes and limitations
+- Complete review before account setup is finalized
+- Editable Profile sections for all onboarding values
+- Google profile image fallback + private custom avatar uploads
+
+### Backend & data safety
+
+- Supabase PostgreSQL
+- Row Level Security
+- Version-controlled SQL migrations
+- Transactional onboarding completion
+- Private user-owned avatar Storage policies
+- Zod client validation mirrored by database constraints
+- Canonical metric storage with metric/imperial presentation
+
+### Engineering quality
+
+- Strict TypeScript
+- ESLint
+- Jest + React Native Testing Library
+- Expo Doctor validation
+- Android EAS development builds
+- Automated CI checks
+- **128 automated tests passing at the end of the Phase 1 OAuth callback work**
 
 ---
 
-## Product Roadmap
+## Product Direction
 
-| Phase | Scope | Status |
-| --- | --- | --- |
-| 1 | App foundation, auth, onboarding, profile, design system & backend | ✅ Complete |
-| 2 | Exercise library, workout logging, history & personal records | ⬜ Planned |
-| 3 | Adaptive training engine & AI provider layer | ⬜ Planned |
-| 4 | XP, levels, achievements & streaks | ⬜ Planned |
-| 5 | Friends, challenges & leaderboards | ⬜ Planned |
-| 6 | Notifications, offline support & release preparation | ⬜ Planned |
+### Workout Core
 
----
+Phase 2 turns the foundation into a real workout application.
 
-## Planned Experience
+Planned core capabilities include:
 
-### 🧠 Adaptive Training
-
-Training plans will adapt from structured user data and recent performance rather than treating the AI model as the database or rules engine.
-
-Planned inputs include:
-
-- Goals and training experience
-- Available training days
-- Session duration
-- Available equipment
-- Recent performance and progression
-- Training volume and consistency
-- Exercise preferences and constraints
-
-### 📈 Progression
-
-The workout core is planned around measurable progression:
-
+- Exercise library
+- Manual workout creation
+- Planned vs. actual performance
+- Warm-up and working sets
+- Weight, reps, RIR and optional RPE
+- Rest timers
+- Exercise substitutions and skipped sets
 - Workout history
-- Sets, reps and weight tracking
-- Personal records
-- Progressive overload
-- Training analytics
-- Recent-performance summaries
+- Personal-record detection
+- Estimated strength metrics
+- Basic progress analytics
 
-### 🎮 Gamification
+A major design principle is that planned and performed data remain distinct. For example:
 
-Motivation is a core product feature rather than a cosmetic layer.
+```text
+Planned
+Bench Press · 80 kg · 3 × 8–10 · 2 RIR
 
-Planned systems include:
+Performed
+Set 1 · 80 kg × 10 · 2 RIR
+Set 2 · 80 kg × 9  · 1 RIR
+Set 3 · 80 kg × 8  · 0 RIR
+```
+
+That structured history becomes the foundation for later adaptive programming.
+
+### Adaptive Training
+
+The future training engine is intended to combine deterministic training logic with AI-assisted planning instead of treating an LLM as the database or rules engine.
+
+Planned context includes:
+
+- Training goal and experience
+- Selected training days
+- Workout duration
+- Available equipment
+- Recent exercise performance
+- Muscle-group exposure
+- Progression trends
+- Missed workouts
+- Readiness and recovery inputs
+
+### Gamification
+
+LevelRep is also designed around motivation as a first-class product feature:
 
 - XP and levels
 - Badges and achievements
+- PR milestones
 - Training streaks
-- Challenges with friends
+- Challenges
+- Friends
 - Leaderboards
+
+The intent is to reward meaningful training and consistency rather than simple app engagement.
+
+---
+
+## Roadmap
+
+<img src="assets/roadmap.svg" alt="LevelRep project roadmap" width="100%" />
+
+| Phase | Scope | Status |
+| --- | --- | --- |
+| **1** | App foundation, authentication, onboarding, profile, design system & backend | ✅ Complete |
+| **2** | Exercise library, workout logging, history & personal records | 🔵 Next |
+| **3** | Adaptive training engine & AI provider layer | ⬜ Planned |
+| **4** | XP, levels, achievements & streaks | ⬜ Planned |
+| **5** | Friends, challenges & leaderboards | ⬜ Planned |
+| **6** | Notifications, offline support & release preparation | ⬜ Planned |
 
 ---
 
 ## Architecture
 
+```text
+Mobile App
+React Native + Expo + TypeScript
+        │
+        ├── Expo Router
+        ├── Design System
+        ├── Zustand
+        └── TanStack React Query
+        │
+        ▼
+Supabase
+        │
+        ├── Auth
+        ├── PostgreSQL
+        ├── Row Level Security
+        └── Private Storage
+        │
+        ▼
+Future Training Layer
+        │
+        ├── Deterministic progression logic
+        ├── Training-history aggregation
+        ├── Validation / constraints
+        └── Provider-independent AI planning
+```
+
 ### Mobile
 
-- **Expo SDK 57**
 - **React Native**
+- **Expo SDK 57**
 - **TypeScript**
-- **Expo Router** for file-based navigation
-- **React Native Reanimated** and native interaction libraries
+- **Expo Router**
+- **Expo Development Client**
+- **EAS Build**
 
 ### Backend
 
 - **Supabase Auth**
 - **PostgreSQL**
 - **Row Level Security**
+- **Supabase Storage**
 - Version-controlled SQL migrations
-- Private storage for user avatars
 
-### State & Data
+### State & validation
 
-- **Zustand** for local/ephemeral UI state
-- **TanStack React Query** for backend-backed server state
-- **AsyncStorage** for persisted local onboarding state
-- **Zod** for client-side schemas and validation
+- **TanStack React Query** for backend state
+- **Zustand** for local/ephemeral state
+- **AsyncStorage** for persisted onboarding drafts
+- **Zod** for typed client validation
 
-### Quality
+---
 
-- **Jest**
-- **Testing Library for React Native**
-- **ESLint**
-- **Prettier**
-- Strict TypeScript checks
-- Automated CI on pushes and pull requests
+## Design Language
+
+LevelRep uses a dark, high-contrast visual system with electric-blue interaction states.
+
+The interface is being designed around:
+
+- Clear single-purpose screens
+- Large mobile touch targets
+- Minimal friction while training
+- Strong selected states
+- Compact data presentation
+- Dark-mode-first visuals
+- Subtle haptics and motion
+- Accessibility-aware controls
 
 ---
 
 ## Privacy & Source Code
 
-The main LevelRep repository is intentionally private while the product is being designed and developed.
+The production LevelRep repository is intentionally private while the product is under active development.
 
-This showcase contains **no credentials, private backend configuration or proprietary source code**. It exists to document the product, technology choices and development progress publicly.
+This showcase repository contains **no production credentials, OAuth secrets, private Supabase configuration, user data or proprietary application source code**.
+
+The visuals in this repository are public showcase assets created to communicate the product direction and current implemented experience.
 
 ---
 
+## Development Status
+
+```text
+Phase 1  ████████████████████  COMPLETE
+Phase 2  ░░░░░░░░░░░░░░░░░░░░  NEXT
+Phase 3  ░░░░░░░░░░░░░░░░░░░░  PLANNED
+Phase 4  ░░░░░░░░░░░░░░░░░░░░  PLANNED
+Phase 5  ░░░░░░░░░░░░░░░░░░░░  PLANNED
+Phase 6  ░░░░░░░░░░░░░░░░░░░░  PLANNED
+```
+
 <div align="center">
 
-**Built by [Baitermin](https://github.com/Baitermin)**
+### Built by [Baitermin](https://github.com/Baitermin)
 
-🚧 LevelRep is actively being developed.
+**LevelRep is actively being developed.**
 
 </div>
