@@ -1,17 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">LevelRep Phase 1 mobile screens</title>
-  <desc id="desc">Four phone mockups showing welcome, onboarding, profile and sign-in screens.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#050914"/><stop offset="1" stop-color="#02050b"/></linearGradient>
-    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#246fff"/><stop offset="1" stop-color="#4f99ff"/></linearGradient>
-    <filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="28" flood-color="#000" flood-opacity=".55"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#071123"/>
+      <stop offset="1" stop-color="#02050b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f6fff"/>
+      <stop offset="1" stop-color="#55a8ff"/>
+    </linearGradient>
   </defs>
+
   <rect width="1600" height="900" fill="url(#bg)"/>
-  <text x="800" y="72" text-anchor="middle" fill="#f4f7ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" letter-spacing="8">PHASE 1 — <tspan fill="#3387ff">FOUNDATION</tspan></text>
-  <line x1="340" y1="62" x2="550" y2="62" stroke="#1d5aaa"/><line x1="1050" y1="62" x2="1260" y2="62" stroke="#1d5aaa"/>
-  <!-- phone helper repeated as groups -->
-  <g transform="translate(80 120) rotate(-4 170 330)" filter="url(#shadow)"><rect width="340" height="660" rx="52" fill="#0b0f18" stroke="#637694" stroke-width="4"/><rect x="14" y="16" width="312" height="628" rx="40" fill="#050a16"/><circle cx="170" cy="32" r="8" fill="#111927"/><text x="170" y="268" text-anchor="middle" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="38" font-weight="800">Level<tspan fill="#2d84ff">Rep</tspan></text><text x="170" y="308" text-anchor="middle" fill="#64a4ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Every rep levels you up.</text><text x="170" y="360" text-anchor="middle" fill="#aab9d2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Build your training profile</text><rect x="48" y="540" width="244" height="50" rx="14" fill="url(#blue)"/><text x="170" y="572" text-anchor="middle" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">Continue</text></g>
-  <g transform="translate(450 105) rotate(-1 170 330)" filter="url(#shadow)"><rect width="340" height="660" rx="52" fill="#0b0f18" stroke="#637694" stroke-width="4"/><rect x="14" y="16" width="312" height="628" rx="40" fill="#060b16"/><circle cx="170" cy="32" r="8" fill="#111927"/><text x="31" y="86" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Training Preferences</text><text x="31" y="126" fill="#7188aa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">MAIN GOAL</text><g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13"><rect x="31" y="140" width="120" height="38" rx="19" fill="#173b73" stroke="#2e86ff"/><text x="91" y="164" text-anchor="middle" fill="#d7e9ff">Build Muscle</text><rect x="160" y="140" width="106" height="38" rx="19" fill="#0c1320" stroke="#26344d"/><text x="213" y="164" text-anchor="middle" fill="#a1b1ca">Get Stronger</text></g><text x="31" y="215" fill="#7188aa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">EXPERIENCE</text><g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13"><rect x="31" y="229" width="85" height="38" rx="19" fill="#0c1320" stroke="#26344d"/><text x="73" y="253" text-anchor="middle" fill="#a1b1ca">Beginner</text><rect x="124" y="229" width="105" height="38" rx="19" fill="#173b73" stroke="#2e86ff"/><text x="176" y="253" text-anchor="middle" fill="#d7e9ff">Intermediate</text></g><text x="31" y="304" fill="#7188aa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">TRAINING FREQUENCY</text><g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" text-anchor="middle"><rect x="31" y="319" width="278" height="43" rx="18" fill="#0a101d" stroke="#1e2b42"/><g fill="#9fb2cf"><text x="51" y="346">1x</text><text x="91" y="346">2x</text><text x="131" y="346">3x</text><text x="171" y="346" fill="#5fa6ff">4x</text><text x="211" y="346">5x</text><text x="251" y="346">6x</text><text x="291" y="346">7x</text></g></g><text x="31" y="404" fill="#7188aa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">BODY & MEASUREMENTS</text><rect x="31" y="418" width="278" height="92" rx="16" fill="#0b1322" stroke="#1d2c46"/><text x="48" y="448" fill="#8094b5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">Height</text><text x="263" y="448" text-anchor="end" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">178 cm</text><text x="48" y="482" fill="#8094b5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">Weight</text><text x="263" y="482" text-anchor="end" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">64.5 kg</text><g transform="translate(32 576)" fill="#61779c"><circle cx="12" cy="12" r="8"/><circle cx="77" cy="12" r="8"/><circle cx="142" cy="12" r="8"/><circle cx="207" cy="12" r="8"/><circle cx="272" cy="12" r="9" fill="#2e84ff"/></g></g>
-  <g transform="translate(820 105) rotate(1 170 330)" filter="url(#shadow)"><rect width="340" height="660" rx="52" fill="#0b0f18" stroke="#637694" stroke-width="4"/><rect x="14" y="16" width="312" height="628" rx="40" fill="#060b16"/><circle cx="170" cy="32" r="8" fill="#111927"/><text x="31" y="82" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" font-weight="800">Profile</text><rect x="31" y="103" width="278" height="150" rx="18" fill="#0b1322" stroke="#1d2c46"/><circle cx="170" cy="158" r="38" fill="#10182a" stroke="#2e84ff"/><text x="170" y="170" text-anchor="middle" fill="#6ca9ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="32" font-weight="700">B</text><text x="48" y="223" fill="#788cac" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11">USERNAME</text><text x="48" y="244" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16">baitermin</text><rect x="31" y="273" width="278" height="175" rx="18" fill="#0b1322" stroke="#1d2c46"/><text x="48" y="303" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">Body & Measurements</text><text x="48" y="341" fill="#8094b5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">Date of birth</text><text x="270" y="341" text-anchor="end" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">2001-07-13</text><text x="48" y="379" fill="#8094b5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">Height</text><text x="270" y="379" text-anchor="end" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">178 cm</text><text x="48" y="417" fill="#8094b5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">Weight</text><text x="270" y="417" text-anchor="end" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">64.5 kg</text><rect x="31" y="469" width="278" height="110" rx="18" fill="#0b1322" stroke="#1d2c46"/><text x="48" y="499" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">Equipment</text><rect x="48" y="519" width="112" height="32" rx="16" fill="#173b73" stroke="#2e86ff"/><text x="104" y="540" text-anchor="middle" fill="#d7e9ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">All Equipment</text><g transform="translate(32 603)" fill="#61779c"><circle cx="12" cy="12" r="8"/><circle cx="77" cy="12" r="8"/><circle cx="142" cy="12" r="8"/><circle cx="207" cy="12" r="8"/><circle cx="272" cy="12" r="9" fill="#2e84ff"/></g></g>
-  <g transform="translate(1190 120) rotate(4 160 320)" filter="url(#shadow)"><rect width="320" height="640" rx="50" fill="#0b0f18" stroke="#637694" stroke-width="4"/><rect x="14" y="16" width="292" height="608" rx="39" fill="#050a16"/><circle cx="160" cy="32" r="8" fill="#111927"/><text x="160" y="192" text-anchor="middle" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="34" font-weight="800">Level<tspan fill="#2d84ff">Rep</tspan></text><rect x="34" y="246" width="252" height="54" rx="14" fill="#0b1322" stroke="#1d2c46"/><text x="55" y="279" fill="#8195b5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">Email</text><rect x="34" y="314" width="252" height="54" rx="14" fill="#0b1322" stroke="#1d2c46"/><text x="55" y="347" fill="#8195b5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">Password</text><rect x="34" y="392" width="252" height="50" rx="14" fill="url(#blue)"/><text x="160" y="424" text-anchor="middle" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">Sign in</text><text x="160" y="477" text-anchor="middle" fill="#627696" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">or</text><rect x="34" y="500" width="252" height="50" rx="14" fill="#080d17" stroke="#475b7a"/><circle cx="61" cy="525" r="10" fill="#f5f7fb"/><text x="160" y="531" text-anchor="middle" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">Continue with Google</text><text x="160" y="590" text-anchor="middle" fill="#788daa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">New here? <tspan fill="#4b98ff">Sign up</tspan></text></g>
+  <circle cx="800" cy="460" r="560" fill="#0a1b37" opacity="0.32"/>
+  <line x1="0" y1="820" x2="1600" y2="820" stroke="#17345f" stroke-width="2"/>
+
+  <text x="800" y="72" text-anchor="middle" fill="#eef4ff" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" letter-spacing="6">PHASE 1 — FOUNDATION</text>
+  <text x="800" y="108" text-anchor="middle" fill="#6582ad" font-family="Arial,Helvetica,sans-serif" font-size="17">Authentication · Onboarding · Profile · Supabase foundation</text>
+
+  <!-- Welcome phone -->
+  <g transform="translate(70 155)">
+    <rect width="330" height="610" rx="48" fill="#111827" stroke="#536887" stroke-width="4"/>
+    <rect x="13" y="14" width="304" height="582" rx="38" fill="#050a15"/>
+    <circle cx="165" cy="31" r="7" fill="#182238"/>
+    <circle cx="165" cy="238" r="112" fill="#071a3d"/>
+    <text x="165" y="250" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Level<tspan fill="#3388ff">Rep</tspan></text>
+    <text x="165" y="286" text-anchor="middle" fill="#65a7ff" font-family="Arial,Helvetica,sans-serif" font-size="16">Every rep levels you up.</text>
+    <text x="165" y="344" text-anchor="middle" fill="#a9bad3" font-family="Arial,Helvetica,sans-serif" font-size="14">Build your training profile</text>
+    <text x="165" y="367" text-anchor="middle" fill="#a9bad3" font-family="Arial,Helvetica,sans-serif" font-size="14">and personalize your training.</text>
+    <rect x="45" y="510" width="240" height="52" rx="15" fill="url(#accent)"/>
+    <text x="165" y="543" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">Get Started</text>
+  </g>
+
+  <!-- Onboarding phone -->
+  <g transform="translate(440 135)">
+    <rect width="330" height="650" rx="48" fill="#111827" stroke="#536887" stroke-width="4"/>
+    <rect x="13" y="14" width="304" height="622" rx="38" fill="#060b16"/>
+    <circle cx="165" cy="31" r="7" fill="#182238"/>
+    <rect x="34" y="72" width="54" height="5" rx="3" fill="#3288ff"/>
+    <rect x="95" y="72" width="42" height="5" rx="3" fill="#17243a"/>
+    <rect x="144" y="72" width="42" height="5" rx="3" fill="#17243a"/>
+    <rect x="193" y="72" width="42" height="5" rx="3" fill="#17243a"/>
+    <rect x="242" y="72" width="42" height="5" rx="3" fill="#17243a"/>
+    <text x="34" y="125" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700">What's your main goal?</text>
+    <rect x="34" y="152" width="262" height="58" rx="16" fill="#102a52" stroke="#3388ff" stroke-width="2"/>
+    <text x="55" y="188" fill="#e8f3ff" font-family="Arial,Helvetica,sans-serif" font-size="15">Build Muscle</text>
+    <circle cx="268" cy="181" r="10" fill="#3388ff"/>
+    <polyline points="263,181 267,185 274,176" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <rect x="34" y="222" width="262" height="58" rx="16" fill="#0b1322" stroke="#1d2c46"/>
+    <text x="55" y="258" fill="#9eb0cb" font-family="Arial,Helvetica,sans-serif" font-size="15">Get Stronger</text>
+    <rect x="34" y="292" width="262" height="58" rx="16" fill="#0b1322" stroke="#1d2c46"/>
+    <text x="55" y="328" fill="#9eb0cb" font-family="Arial,Helvetica,sans-serif" font-size="15">General Fitness</text>
+    <text x="34" y="404" fill="#7188aa" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">TRAINING FREQUENCY</text>
+    <rect x="34" y="419" width="262" height="46" rx="18" fill="#0a101d" stroke="#1e2b42"/>
+    <g font-family="Arial,Helvetica,sans-serif" font-size="12" text-anchor="middle" fill="#9fb2cf">
+      <text x="53" y="448">1x</text><text x="90" y="448">2x</text><text x="127" y="448">3x</text><text x="164" y="448" fill="#5fa6ff">4x</text><text x="201" y="448">5x</text><text x="238" y="448">6x</text><text x="275" y="448">7x</text>
+    </g>
+    <rect x="34" y="552" width="262" height="50" rx="15" fill="url(#accent)"/>
+    <text x="165" y="584" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">Continue</text>
+  </g>
+
+  <!-- Profile phone -->
+  <g transform="translate(810 135)">
+    <rect width="330" height="650" rx="48" fill="#111827" stroke="#536887" stroke-width="4"/>
+    <rect x="13" y="14" width="304" height="622" rx="38" fill="#060b16"/>
+    <circle cx="165" cy="31" r="7" fill="#182238"/>
+    <text x="34" y="83" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">Profile</text>
+    <rect x="34" y="105" width="262" height="150" rx="18" fill="#0b1322" stroke="#1d2c46"/>
+    <circle cx="165" cy="158" r="36" fill="#0e203d" stroke="#3388ff" stroke-width="2"/>
+    <text x="165" y="169" text-anchor="middle" fill="#6bacff" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">B</text>
+    <text x="50" y="219" fill="#7289aa" font-family="Arial,Helvetica,sans-serif" font-size="11">USERNAME</text>
+    <text x="50" y="242" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="16">baitermin</text>
+    <rect x="34" y="273" width="262" height="174" rx="18" fill="#0b1322" stroke="#1d2c46"/>
+    <text x="50" y="305" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">Body &amp; Measurements</text>
+    <text x="50" y="344" fill="#8094b5" font-family="Arial,Helvetica,sans-serif" font-size="12">Height</text>
+    <text x="275" y="344" text-anchor="end" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14">178 cm</text>
+    <text x="50" y="382" fill="#8094b5" font-family="Arial,Helvetica,sans-serif" font-size="12">Weight</text>
+    <text x="275" y="382" text-anchor="end" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14">64.5 kg</text>
+    <text x="50" y="420" fill="#8094b5" font-family="Arial,Helvetica,sans-serif" font-size="12">Training</text>
+    <text x="275" y="420" text-anchor="end" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14">4x / week</text>
+    <rect x="34" y="466" width="262" height="96" rx="18" fill="#0b1322" stroke="#1d2c46"/>
+    <text x="50" y="497" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">Equipment</text>
+    <rect x="50" y="515" width="116" height="30" rx="15" fill="#15386e" stroke="#3388ff"/>
+    <text x="108" y="535" text-anchor="middle" fill="#d7e9ff" font-family="Arial,Helvetica,sans-serif" font-size="12">All Equipment</text>
+  </g>
+
+  <!-- Sign-in phone -->
+  <g transform="translate(1180 155)">
+    <rect width="330" height="610" rx="48" fill="#111827" stroke="#536887" stroke-width="4"/>
+    <rect x="13" y="14" width="304" height="582" rx="38" fill="#050a15"/>
+    <circle cx="165" cy="31" r="7" fill="#182238"/>
+    <text x="165" y="174" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="700">Level<tspan fill="#3388ff">Rep</tspan></text>
+    <rect x="36" y="225" width="258" height="54" rx="14" fill="#0b1322" stroke="#1d2c46"/>
+    <text x="57" y="258" fill="#8296b5" font-family="Arial,Helvetica,sans-serif" font-size="14">Email</text>
+    <rect x="36" y="293" width="258" height="54" rx="14" fill="#0b1322" stroke="#1d2c46"/>
+    <text x="57" y="326" fill="#8296b5" font-family="Arial,Helvetica,sans-serif" font-size="14">Password</text>
+    <rect x="36" y="373" width="258" height="50" rx="14" fill="url(#accent)"/>
+    <text x="165" y="405" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">Sign in</text>
+    <text x="165" y="461" text-anchor="middle" fill="#637797" font-family="Arial,Helvetica,sans-serif" font-size="13">or</text>
+    <rect x="36" y="484" width="258" height="50" rx="14" fill="#080d17" stroke="#475b7a"/>
+    <circle cx="63" cy="509" r="9" fill="#f4f7fb"/>
+    <text x="170" y="515" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14">Continue with Google</text>
+    <text x="165" y="571" text-anchor="middle" fill="#778cac" font-family="Arial,Helvetica,sans-serif" font-size="12">New here? Sign up</text>
+  </g>
+
+  <text x="800" y="852" text-anchor="middle" fill="#506b92" font-family="Arial,Helvetica,sans-serif" font-size="15">Public showcase composition — no private backend data or production source code</text>
 </svg>
