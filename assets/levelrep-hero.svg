@@ -50,5 +50,5 @@
     <rect x="27" y="289" width="206" height="104" rx="15" fill="#0b1322" stroke="#1a2942"/><text x="42" y="318" fill="#e8f2ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">Training Preferences</text><rect x="42" y="338" width="76" height="30" rx="15" fill="#16386c" stroke="#2b82ff"/><text x="80" y="359" text-anchor="middle" fill="#b9d7ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11">4x / week</text>
     <g transform="translate(28 423)" fill="#6880a6"><circle cx="18" cy="18" r="8"/><circle cx="70" cy="18" r="8"/><circle cx="122" cy="18" r="8"/><circle cx="174" cy="18" r="8"/><circle cx="206" cy="18" r="9" fill="#2b82ff"/></g>
   </g>
-  <g transform="translate(92 628)"><line x1="0" y1="0" x2="1416" y2="0" stroke="#1b3f76"/><text x="0" y="38" fill="#5c769d" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Cross-platform · iOS + Android · React Native · Expo · Supabase</text></g>
+  <g transform="translate(92 628)"><line x1="0" y1="0" x2="1416" y2="0" stroke="#1b3f76"/><text x="0" y="38" fill="#5c769d" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Mobile-first PWA · Android + iOS · React · Vite · Supabase</text></g>
 </svg>

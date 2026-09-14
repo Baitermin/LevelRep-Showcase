@@ -29,7 +29,7 @@
     <text x="1184" y="410" fill="#667c9e" font-size="22" font-weight="800">05</text><text x="1184" y="448" fill="#c8d2e2" font-size="24" font-weight="800">Social</text><text x="1184" y="479" fill="#7286a5" font-size="15">Friends · Challenges</text>
     <!-- 6 -->
     <g transform="translate(1440 303)"><circle r="78" fill="#09111f" stroke="#3b4c68" stroke-width="3"/><path d="M-8 27c30-10 51-39 45-66-27-6-56 15-66 45l21 21z" fill="none" stroke="#7087aa" stroke-width="5"/><circle cx="12" cy="-15" r="9" fill="none" stroke="#7087aa" stroke-width="4"/><path d="M-15 26l-22 22M-25 10l-22 7M2 35l-7 22" stroke="#7087aa" stroke-width="5" stroke-linecap="round"/></g>
-    <text x="1440" y="410" fill="#667c9e" font-size="22" font-weight="800">06</text><text x="1440" y="448" fill="#c8d2e2" font-size="24" font-weight="800">Release</text><text x="1440" y="479" fill="#7286a5" font-size="15">Offline · Notifications · Stores</text>
+    <text x="1440" y="410" fill="#667c9e" font-size="22" font-weight="800">06</text><text x="1440" y="448" fill="#c8d2e2" font-size="24" font-weight="800">Release</text><text x="1440" y="479" fill="#7286a5" font-size="15">Notifications · Resilience · Launch</text>
   </g>
   <text x="800" y="582" text-anchor="middle" fill="#4d6486" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">Plan → Train → Measure → Adapt → Progress → Repeat</text>
 </svg>

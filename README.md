@@ -8,14 +8,14 @@
 
 ### Every rep levels you up.
 
-A cross-platform fitness app being built around **adaptive training, measurable progression, motivation and social competition**.
+A mobile-first Progressive Web App being built around **adaptive training, measurable progression, motivation and social competition**.
 
 ![Repository](https://img.shields.io/badge/Source-Private-6e7681?style=flat-square&logo=github)
 ![Status](https://img.shields.io/badge/Phase_1-Complete-2f81f7?style=flat-square)
-![Android](https://img.shields.io/badge/Android-Development_Build-3DDC84?style=flat-square&logo=android&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-Planned-111111?style=flat-square&logo=apple&logoColor=white)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Expo](https://img.shields.io/badge/Expo_SDK_57-000020?style=flat-square&logo=expo&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-Mobile_First-5A0FC8?style=flat-square&logo=pwa&logoColor=white)
+![Web](https://img.shields.io/badge/Android_%26_iOS-Installable-2f81f7?style=flat-square)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 
@@ -25,7 +25,7 @@ A cross-platform fitness app being built around **adaptive training, measurable 
 
 ## What is LevelRep?
 
-LevelRep is a mobile fitness product for **Android and iOS** designed around one long-term training loop:
+LevelRep is a mobile-first, installable fitness PWA for modern Android and iOS browsers, designed around one long-term training loop:
 
 > **Plan → Train → Measure → Adapt → Progress → Repeat**
 
@@ -51,7 +51,7 @@ The full production repository is private while the app is actively developed. T
 - Deleted/stale-session verification on startup
 - First-time OAuth username setup
 - Case-insensitive unique usernames
-- Stable native `levelrep://auth/callback` OAuth flow in the Android development build
+- Browser/PWA Google OAuth callback through Supabase PKCE
 
 ### Onboarding & profile
 
@@ -81,9 +81,10 @@ The full production repository is private while the app is actively developed. T
 
 - Strict TypeScript
 - ESLint
-- Jest + React Native Testing Library
-- Expo Doctor validation
-- Android EAS development builds
+- Vitest + Testing Library
+- Production PWA build validation
+- Installable app shell, service worker and explicit update prompt
+- IndexedDB profile cache, onboarding persistence and mutation-outbox foundation
 - Automated CI checks
 - **128 automated tests passing at the end of the Phase 1 OAuth callback work**
 
@@ -161,25 +162,27 @@ The intent is to reward meaningful training and consistency rather than simple a
 
 | Phase | Scope | Status |
 | --- | --- | --- |
-| **1** | App foundation, authentication, onboarding, profile, design system & backend | ✅ Complete |
+| **1** | PWA foundation, authentication, onboarding, profile, offline architecture & backend | ✅ Complete |
 | **2** | Exercise library, workout logging, history & personal records | 🔵 Next |
 | **3** | Adaptive training engine & AI provider layer | ⬜ Planned |
 | **4** | XP, levels, achievements & streaks | ⬜ Planned |
 | **5** | Friends, challenges & leaderboards | ⬜ Planned |
-| **6** | Notifications, offline support & release preparation | ⬜ Planned |
+| **6** | Notifications, resilience polish & public release preparation | ⬜ Planned |
 
 ---
 
 ## Architecture
 
 ```text
-Mobile App
-React Native + Expo + TypeScript
+Mobile-first Progressive Web App
+React + Vite + TypeScript
         │
-        ├── Expo Router
+        ├── React Router
         ├── Design System
         ├── Zustand
-        └── TanStack React Query
+        ├── TanStack React Query
+        ├── Service Worker
+        └── Dexie / IndexedDB
         │
         ▼
 Supabase
@@ -198,14 +201,15 @@ Future Training Layer
         └── Provider-independent AI planning
 ```
 
-### Mobile
+### PWA client
 
-- **React Native**
-- **Expo SDK 57**
+- **React 19**
+- **Vite**
 - **TypeScript**
-- **Expo Router**
-- **Expo Development Client**
-- **EAS Build**
+- **React Router**
+- **Workbox service worker**
+- **Web App Manifest**
+- Mobile-first responsive and safe-area-aware UI
 
 ### Backend
 
@@ -219,7 +223,7 @@ Future Training Layer
 
 - **TanStack React Query** for backend state
 - **Zustand** for local/ephemeral state
-- **AsyncStorage** for persisted onboarding drafts
+- **Dexie / IndexedDB** for cached entities, onboarding drafts and the offline mutation outbox
 - **Zod** for typed client validation
 
 ---
