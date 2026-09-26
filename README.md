@@ -79,7 +79,9 @@ The full production repository is private while the app is actively developed. T
 - Muscle-focus preferences with a maximum of four focused areas
 - Exercise likes/dislikes and limitations
 - Complete review before account setup is finalized
-- Editable Profile sections for all onboarding values
+- Cleaner mobile Profile with a compact identity header, at-a-glance training summary and grouped edit sections
+- Separate case-preserving profile name and lowercase unique `@username`
+- Quiet autosave for profile preferences with validation, save status and offline retry support
 - Google profile image fallback + private custom avatar uploads
 
 ### Backend & data safety
@@ -101,7 +103,7 @@ The full production repository is private while the app is actively developed. T
 - Installable app shell, service worker and explicit update prompt
 - IndexedDB profile cache, onboarding persistence and mutation-outbox foundation
 - Automated CI checks
-- **211 automated tests passing through the private-beta and authentication UX increment**
+- **234 automated tests passing through the Profile autosave and information-architecture increment**
 
 ---
 
