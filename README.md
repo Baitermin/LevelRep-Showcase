@@ -56,7 +56,9 @@ The full production repository is private while the app is actively developed. T
 
 ### Authentication & identity
 
-- Server-verified private beta invitation gate for the development deployment
+- Account-based private beta membership with invitation-code onboarding
+- Returning-member access across devices without re-entering the current invitation code
+- Server-authorized administrator controls for member revocation/restoration and invitation rotation
 - Email/password sign-up and sign-in
 - Google OAuth through Supabase Auth
 - Persistent authenticated sessions
@@ -98,7 +100,7 @@ The full production repository is private while the app is actively developed. T
 - Installable app shell, service worker and explicit update prompt
 - IndexedDB profile cache, onboarding persistence and mutation-outbox foundation
 - Automated CI checks
-- **175 automated tests passing through the private-beta infrastructure increment**
+- **193 automated tests passing through the account-based private-beta membership increment**
 
 ---
 
