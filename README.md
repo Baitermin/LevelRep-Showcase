@@ -11,7 +11,7 @@
 A mobile-first Progressive Web App being built around **adaptive training, measurable progression, motivation and social competition**.
 
 ![Repository](https://img.shields.io/badge/Source-Private-6e7681?style=flat-square&logo=github)
-![Status](https://img.shields.io/badge/Phase_1-Complete-2f81f7?style=flat-square)
+![Status](https://img.shields.io/badge/Phase_2A.1-Complete-2f81f7?style=flat-square)
 ![PWA](https://img.shields.io/badge/PWA-Mobile_First-5A0FC8?style=flat-square&logo=pwa&logoColor=white)
 ![Web](https://img.shields.io/badge/Android_%26_iOS-Installable-2f81f7?style=flat-square)
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
@@ -35,13 +35,24 @@ The full production repository is private while the app is actively developed. T
 
 ---
 
-## Current Build — Phase 1
+## Current Build — Phase 2A.1
 
-![LevelRep Phase 1 mobile UI showcase](https://raw.githubusercontent.com/Baitermin/LevelRep-Showcase/Master/assets/phase-1-foundation.svg)
+![LevelRep Phase 2A.1 mobile UI showcase](https://raw.githubusercontent.com/Baitermin/LevelRep-Showcase/Master/assets/phase-2a-exercise-media.svg)
 
-> The artwork above is a public showcase composition based on the current LevelRep design language and implemented Phase 1 flows. It intentionally contains no private backend data or production source code.
+> This public-safe composition reflects implemented Exercise Library, Exercise Detail and Train foundation screens. It contains no private backend data or production source code.
 
-**Phase 1 — Foundation is complete.** The current application includes a working mobile foundation backed by a live Supabase project.
+**Phase 1, Phase 2A and Phase 2A.1 are complete.** LevelRep now has a real exercise and workout-data foundation backed by Supabase. Phase 2B—the workout template builder—is next.
+
+### Exercise & workout foundation
+
+- 250 normalized system exercises with stable IDs and source provenance
+- Search plus muscle and equipment filters
+- Mobile Exercise Library and detailed instruction screens
+- Lazy poster thumbnails and 250 clearly labelled static start/finish references
+- Supabase Storage delivery with bounded, on-demand Workbox caching
+- Dexie-backed offline exercise metadata
+- Owner-scoped workout template, session, exercise and set database foundation
+- Strict RLS separating system reference data from private user training data
 
 ### Authentication & identity
 
@@ -86,7 +97,7 @@ The full production repository is private while the app is actively developed. T
 - Installable app shell, service worker and explicit update prompt
 - IndexedDB profile cache, onboarding persistence and mutation-outbox foundation
 - Automated CI checks
-- **128 automated tests passing at the end of the Phase 1 OAuth callback work**
+- **162 automated tests passing through Phase 2A.1**
 
 ---
 
@@ -94,11 +105,11 @@ The full production repository is private while the app is actively developed. T
 
 ### Workout Core
 
-Phase 2 turns the foundation into a real workout application.
+Phase 2A established the exercise catalog and normalized workout database. Phase 2B will add the first workout-building interaction.
 
 Planned core capabilities include:
 
-- Exercise library
+- Workout template builder
 - Manual workout creation
 - Planned vs. actual performance
 - Warm-up and working sets
@@ -163,7 +174,11 @@ The intent is to reward meaningful training and consistency rather than simple a
 | Phase | Scope | Status |
 | --- | --- | --- |
 | **1** | PWA foundation, authentication, onboarding, profile, offline architecture & backend | ✅ Complete |
-| **2** | Exercise library, workout logging, history & personal records | 🔵 Next |
+| **2A** | Exercise catalog & workout data foundation | ✅ Complete |
+| **2A.1** | Exercise media & movement-reference previews | ✅ Complete |
+| **2B** | Workout template builder | 🔵 Next |
+| **2C** | Active workout logger | ⬜ Planned |
+| **2D** | History, PRs & progression | ⬜ Planned |
 | **3** | Adaptive training engine & AI provider layer | ⬜ Planned |
 | **4** | XP, levels, achievements & streaks | ⬜ Planned |
 | **5** | Friends, challenges & leaderboards | ⬜ Planned |
@@ -258,8 +273,10 @@ The visuals in this repository are public showcase assets created to communicate
 ## Development Status
 
 ```text
-Phase 1  ████████████████████  COMPLETE
-Phase 2  ░░░░░░░░░░░░░░░░░░░░  NEXT
+Phase 1    ████████████████████  COMPLETE
+Phase 2A   ████████████████████  COMPLETE
+Phase 2A.1 ████████████████████  COMPLETE
+Phase 2B   ░░░░░░░░░░░░░░░░░░░░  NEXT
 Phase 3  ░░░░░░░░░░░░░░░░░░░░  PLANNED
 Phase 4  ░░░░░░░░░░░░░░░░░░░░  PLANNED
 Phase 5  ░░░░░░░░░░░░░░░░░░░░  PLANNED
