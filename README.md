@@ -59,8 +59,9 @@ The full production repository is private while the app is actively developed. T
 - Account-based private beta membership with invitation-code onboarding
 - Returning-member access across devices without re-entering the current invitation code
 - Server-authorized administrator controls for member revocation/restoration and invitation rotation
+- Protected administrator accounts that cannot be revoked through beta management
 - Email/password sign-up and sign-in
-- Google OAuth through Supabase Auth
+- Google OAuth through Supabase Auth directly from sign-in and sign-up
 - Persistent authenticated sessions
 - Deleted/stale-session verification on startup
 - First-time OAuth username setup
@@ -100,7 +101,7 @@ The full production repository is private while the app is actively developed. T
 - Installable app shell, service worker and explicit update prompt
 - IndexedDB profile cache, onboarding persistence and mutation-outbox foundation
 - Automated CI checks
-- **193 automated tests passing through the account-based private-beta membership increment**
+- **211 automated tests passing through the private-beta and authentication UX increment**
 
 ---
 
