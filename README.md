@@ -35,17 +35,18 @@ The full production repository is private while the app is actively developed. T
 
 ---
 
-## Current Build — Phase 2A.1
+## Current Build — Phase 2A.2
 
 ![LevelRep Phase 2A.1 mobile UI showcase](https://raw.githubusercontent.com/Baitermin/LevelRep-Showcase/Master/assets/phase-2a-exercise-media.svg)
 
 > This public-safe composition reflects implemented Exercise Library, Exercise Detail and Train foundation screens. It contains no private backend data or production source code.
 
-**Phase 1, Phase 2A and Phase 2A.1 are complete.** LevelRep now has a real exercise and workout-data foundation backed by Supabase. Phase 2B—the workout template builder—is next.
+**Phase 1 through Phase 2A.2 are complete.** LevelRep now has a real exercise and workout-data foundation backed by Supabase. Phase 2B—the workout template builder—is next.
 
 ### Exercise & workout foundation
 
 - 250 normalized system exercises with stable IDs and source provenance
+- Exercise Detail supports looping movement previews with the full static Start/Finish reference as fallback
 - Search plus muscle and equipment filters
 - Mobile Exercise Library and detailed instruction screens
 - Lazy poster thumbnails and 250 clearly labelled static start/finish references
@@ -103,7 +104,7 @@ The full production repository is private while the app is actively developed. T
 - Installable app shell, service worker and explicit update prompt
 - IndexedDB profile cache, onboarding persistence and mutation-outbox foundation
 - Automated CI checks
-- **234 automated tests passing through the Profile autosave and information-architecture increment**
+- **247 automated tests passing through the private-beta movement-preview increment**
 
 ---
 
@@ -182,6 +183,7 @@ The intent is to reward meaningful training and consistency rather than simple a
 | **1** | PWA foundation, authentication, onboarding, profile, offline architecture & backend | ✅ Complete |
 | **2A** | Exercise catalog & workout data foundation | ✅ Complete |
 | **2A.1** | Exercise media & movement-reference previews | ✅ Complete |
+| **2A.2** | Private-beta movement previews with static fallback | ✅ Complete |
 | **2B** | Workout template builder | 🔵 Next |
 | **2C** | Active workout logger | ⬜ Planned |
 | **2D** | History, PRs & progression | ⬜ Planned |
@@ -282,6 +284,7 @@ The visuals in this repository are public showcase assets created to communicate
 Phase 1    ████████████████████  COMPLETE
 Phase 2A   ████████████████████  COMPLETE
 Phase 2A.1 ████████████████████  COMPLETE
+Phase 2A.2 ████████████████████  COMPLETE
 Phase 2B   ░░░░░░░░░░░░░░░░░░░░  NEXT
 Phase 3  ░░░░░░░░░░░░░░░░░░░░  PLANNED
 Phase 4  ░░░░░░░░░░░░░░░░░░░░  PLANNED
