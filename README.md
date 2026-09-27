@@ -104,7 +104,7 @@ The full production repository is private while the app is actively developed. T
 - Installable app shell, service worker and explicit update prompt
 - IndexedDB profile cache, onboarding persistence and mutation-outbox foundation
 - Automated CI checks
-- **247 automated tests passing through the private-beta movement-preview increment**
+- **248 automated tests passing through the private-beta movement-preview increment**
 
 ---
 
